@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InterviewProject</name>
+    </assembly>
+    <members>
+        <member name="M:InterviewProject.Controllers.UserController.Get">
+            <summary>
+            Show all users details
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:InterviewProject.Controllers.UserController.Get(System.Int32)">
+            <summary>
+            Show details of one user 
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:InterviewProject.Controllers.UserController.Post(InterviewProject.Models.User)">
+            <summary>
+            Add one user
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:InterviewProject.Controllers.UserController.Put(InterviewProject.Models.User)">
+            <summary>
+            Update details of user
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:InterviewProject.Controllers.UserController.Delete(System.Int32)">
+            <summary>
+            Delete one user
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
