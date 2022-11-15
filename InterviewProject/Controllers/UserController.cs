@@ -12,6 +12,7 @@ namespace InterviewProject.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    //[EnableCors("shell")]
     [EnableCors("interview-project")]
     public class UserController : ControllerBase
     {
@@ -38,6 +39,7 @@ namespace InterviewProject.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
+        //[EnableCors("sidenav")]
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {

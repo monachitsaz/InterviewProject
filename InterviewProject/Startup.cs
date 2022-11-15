@@ -77,6 +77,42 @@ namespace InterviewProject
 
                     });
             });
+            services.AddCors(options =>
+            {
+                options.AddPolicy("user-list",
+                    builder =>
+                    {
+                        //here you can give special domain or ip
+                        builder.WithOrigins("*");
+                        builder.WithHeaders("*");
+                        builder.WithMethods("*");
+
+                    });
+            });
+            services.AddCors(options =>
+            {
+                options.AddPolicy("shell",
+                    builder =>
+                    {
+                        //here you can give special domain or ip
+                        builder.WithOrigins("*");
+                        builder.WithHeaders("*");
+                        builder.WithMethods("*");
+
+                    });
+            });
+            services.AddCors(options =>
+            {
+                options.AddPolicy("sidenav",
+                    builder =>
+                    {
+                        //here you can give special domain or ip
+                        builder.WithOrigins("*");
+                        builder.WithHeaders("*");
+                        builder.WithMethods("*");
+
+                    });
+            });
             #endregion
         }
 
